@@ -11,6 +11,8 @@
 		1D90341F25488C00006741F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90341E25488C00006741F4 /* ContentView.swift */; };
 		1D90342125488C03006741F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D90342025488C03006741F4 /* Assets.xcassets */; };
 		1D90342425488C03006741F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D90342325488C03006741F4 /* Preview Assets.xcassets */; };
+		1D90342D25488C4A006741F4 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90342C25488C4A006741F4 /* Repo.swift */; };
+		1D90343125488C9A006741F4 /* RepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90343025488C9A006741F4 /* RepoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		1D90342025488C03006741F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D90342325488C03006741F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D90342525488C03006741F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D90342C25488C4A006741F4 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		1D90343025488C9A006741F4 /* RepoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +56,13 @@
 		1D90341B25488C00006741F4 /* RedactedModifiersInSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				1D90341C25488C00006741F4 /* RedactedModifiersInSwiftUIApp.swift */,
-				1D90341E25488C00006741F4 /* ContentView.swift */,
 				1D90342025488C03006741F4 /* Assets.xcassets */,
+				1D90341E25488C00006741F4 /* ContentView.swift */,
 				1D90342525488C03006741F4 /* Info.plist */,
 				1D90342225488C03006741F4 /* Preview Content */,
+				1D90341C25488C00006741F4 /* RedactedModifiersInSwiftUIApp.swift */,
+				1D90342C25488C4A006741F4 /* Repo.swift */,
+				1D90343025488C9A006741F4 /* RepoView.swift */,
 			);
 			path = RedactedModifiersInSwiftUI;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D90342D25488C4A006741F4 /* Repo.swift in Sources */,
 				1D90341F25488C00006741F4 /* ContentView.swift in Sources */,
+				1D90343125488C9A006741F4 /* RepoView.swift in Sources */,
 				1D90341D25488C00006741F4 /* RedactedModifiersInSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
