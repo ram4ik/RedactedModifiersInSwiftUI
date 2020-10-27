@@ -1,5 +1,5 @@
 //
-//  RepoView.swift
+//  RepoView1.swift
 //  RedactedModifiersInSwiftUI
 //
 //  Created by Ramill Ibragimov on 27.10.2020.
@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct RepoView: View {
+struct RepoView1: View {
+    @Environment(\.redactionReasons) var reasons
     let repo: Repo
     
     var body: some View {
@@ -16,9 +17,10 @@ struct RepoView: View {
                 Image(systemName: "star.fill")
                     .resizable()
                     .frame(width: 44, height: 44)
-                    .unredacted()
+                    //.unredacted(when: !reasons.contains(.images))
                 Text(String(repo.stars))
                     .font(.title)
+                    //.unredacted(when: !reasons.contains(.text))
             }.foregroundColor(.red)
             
             VStack(alignment: .leading) {
@@ -26,19 +28,18 @@ struct RepoView: View {
                     .font(.headline)
                 Text(repo.description)
                     .foregroundColor(.secondary)
-            }
+            }//.unredacted(when: !reasons.contains(.text))
         }
     }
 }
 
-extension Repo {
-    static let mock = Repo(
-        name: "SwiftUICharts",
-        description: "A simple line and bar charting library that support accessibility written using SwiftUI",
-        stars: 579)
-}
-
-extension RedactionReasons {
-    static let text = RedactionReasons(rawValue: 1 << 2)
-    static let images = RedactionReasons(rawValue: 1 << 4)
+extension View {
+    @ViewBuilder func unredected(when condition: Bool) -> some View {
+        if condition {
+            unredacted()
+        } else {
+            // Use default .placeholder or implement your custom effect
+            redacted(reason: .placeholder)
+        }
+    }
 }
