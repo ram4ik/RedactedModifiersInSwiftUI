@@ -13,6 +13,8 @@
 		1D90342425488C03006741F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D90342325488C03006741F4 /* Preview Assets.xcassets */; };
 		1D90342D25488C4A006741F4 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90342C25488C4A006741F4 /* Repo.swift */; };
 		1D90343125488C9A006741F4 /* RepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90343025488C9A006741F4 /* RepoView.swift */; };
+		1D9034382548955E006741F4 /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9034372548955E006741F4 /* GithubService.swift */; };
+		1D90343B25489595006741F4 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90343A25489595006741F4 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1D90342525488C03006741F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D90342C25488C4A006741F4 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		1D90343025488C9A006741F4 /* RepoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoView.swift; sourceTree = "<group>"; };
+		1D9034372548955E006741F4 /* GithubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubService.swift; sourceTree = "<group>"; };
+		1D90343A25489595006741F4 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				1D90341C25488C00006741F4 /* RedactedModifiersInSwiftUIApp.swift */,
 				1D90342C25488C4A006741F4 /* Repo.swift */,
 				1D90343025488C9A006741F4 /* RepoView.swift */,
+				1D9034372548955E006741F4 /* GithubService.swift */,
+				1D90343A25489595006741F4 /* Store.swift */,
 			);
 			path = RedactedModifiersInSwiftUI;
 			sourceTree = "<group>";
@@ -147,6 +153,8 @@
 				1D90342D25488C4A006741F4 /* Repo.swift in Sources */,
 				1D90341F25488C00006741F4 /* ContentView.swift in Sources */,
 				1D90343125488C9A006741F4 /* RepoView.swift in Sources */,
+				1D90343B25489595006741F4 /* Store.swift in Sources */,
+				1D9034382548955E006741F4 /* GithubService.swift in Sources */,
 				1D90341D25488C00006741F4 /* RedactedModifiersInSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

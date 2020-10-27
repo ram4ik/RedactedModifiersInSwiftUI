@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var store = Store(service: .init())
+    
     var body: some View {
+        /*
         HStack {
             RepoView(repo: .mock)
             Divider()
             RepoView(repo: .mock)
                 .redacted(reason: .placeholder)
+        }*/
+        
+        List(store.repos, id: \.self) { repo in
+            RepoView(repo: repo)
         }
+        .onAppear(perform: {
+            store.fetch()
+        })
+        .redacted(reason: store.isLoading ? .placeholder : [])
     }
 }
 
